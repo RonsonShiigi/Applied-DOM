@@ -255,15 +255,19 @@
    */
 
   btn13.addEventListener('click', function(event){
+    setMyLightClass.bind(this)(event,'light-green');
     
-  })
+  });
   /*
    * Add a click event listener to btn14
    * the handler method will be a function expression
    * that is the result of invoking the Function prototype method, bind
    * on the setMyLightGreen function
    */
-
+  btn14.addEventListener('click',function(){
+    setMyLightGreen.bind(btn14)()
+    
+  });
 
   /*
    * Add a click event listener to btn15
@@ -272,6 +276,7 @@
    *
    * Hint: Do not declare a new function expression as an event handler.
    */
-
+  const light15 = setMyLightClass.bind(btn15,null,'light-green')
+  btn15.addEventListener('click',light15)
 
 }(window));
