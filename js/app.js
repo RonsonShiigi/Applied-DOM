@@ -194,7 +194,9 @@
    * the body of the event handler function
    * will invoke the setLight10Green function
    */
-  document.addEventListener('click',setLight10Green);
+  btn10.addEventListener('click',function(){
+    setLight10Green()
+  });
 
   /*
    * Declare a new const named setLight11Green
@@ -214,7 +216,9 @@
    * will invoke the setLight11Green function
    */
 
-  document.addEventListener('click',setLight11Green);
+  btn11.addEventListener('click',function(){
+    setLight11Green()
+  });
   /*
    * Declare a new const named setLight12Class
    * assign it's value to a reference to the function setMyLightClass
@@ -232,7 +236,7 @@
    *   passing 2 additional arguments
    *     event, 'light-green'
    */
-  document.addEventListener('click',function(){
+  btn12.addEventListener('click',function(){
     setLight12Class(event,'light-green')
   })
 
@@ -250,7 +254,9 @@
    *     event, 'light-green'
    */
 
-
+  btn13.addEventListener('click', function(event){
+    
+  })
   /*
    * Add a click event listener to btn14
    * the handler method will be a function expression
